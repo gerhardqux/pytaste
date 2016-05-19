@@ -1,0 +1,21 @@
+listen10:
+  socket.listening:
+    - local_ip: 10.0.0.0
+    - proto: tcp
+
+listen6:
+  socket.listening:
+    - local_ip: '0000:0000:0000:0000:0000:0000:0000:0000'
+    - proto: tcp6
+
+tcp222:
+  socket.listening:
+    - local_ip: 0.0.0.0
+    - local_port: 222
+    - proto: tcp
+
+tcp2222:
+  socket.listening:
+    - local_ip: 0.0.0.0
+    - local_port: 2222
+    - proto: tcp
